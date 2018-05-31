@@ -8,6 +8,7 @@ public class Node {
 	public Node(String cityName, Node firstChild, Node secondChild)
 	{
 		this.cityName = cityName;
+		this.leftChild = firstChild;
 	}
 	
 }
