@@ -31,6 +31,17 @@ public class BreadthFirstSearch {
 			System.out.println("explored");
 			return true;
 		}
+		else{
+            if(current.getChildren().isEmpty())
+                return false;
+            else
+                queue.addAll(current.getChildren());
+        }
+        explored.add(current);
+    }
+
+    return false;
+		
 	}
 	
 	

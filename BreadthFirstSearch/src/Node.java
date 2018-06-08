@@ -13,6 +13,13 @@ public class Node {
 		this.rightChild = secondChild;
 	}
 	
+	public Node(String cityName, Node firstChild)
+	{
+		this.cityName = cityName;
+		this.leftChild = firstChild;
+		
+	}
+	
 
     public ArrayList<node> getChildren(){
         ArrayList<node> childNodes = new ArrayList<>();
@@ -29,5 +36,10 @@ public class Node {
     public boolean removeChild(Node n){
         return false;
     }
+
+	public void setChildren(ArrayList<Node> arrayList) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }
